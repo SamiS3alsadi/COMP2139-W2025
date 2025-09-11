@@ -1,0 +1,8 @@
+@model Lap_1.Models.Project
+@{
+    ViewData["Title"] = "Project Details";
+}
+<h2>@Model.Name</h2>
+<p>@Model.Description</p>
+<p><b>Created:</b> @Model.CreatedAt</p>
+<p><a asp-action="Index" class="btn btn-secondary">Back to list</a></p>

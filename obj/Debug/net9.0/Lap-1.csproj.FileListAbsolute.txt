@@ -1,0 +1,290 @@
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/bin/Debug/net9.0/appsettings.Development.json
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/bin/Debug/net9.0/appsettings.json
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/bin/Debug/net9.0/Lap-1.staticwebassets.runtime.json
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/bin/Debug/net9.0/Lap-1.staticwebassets.endpoints.json
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/bin/Debug/net9.0/Lap-1
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/bin/Debug/net9.0/Lap-1.deps.json
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/bin/Debug/net9.0/Lap-1.runtimeconfig.json
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/bin/Debug/net9.0/Lap-1.dll
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/bin/Debug/net9.0/Lap-1.pdb
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/rpswa.dswa.cache.json
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.AssemblyInfoInputs.cache
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.AssemblyInfo.cs
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.csproj.CoreCompileInputs.cache
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.MvcApplicationPartsAssemblyInfo.cache
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.RazorAssemblyInfo.cache
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.RazorAssemblyInfo.cs
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/rjimswa.dswa.cache.json
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/scopedcss/bundle/Lap-1.styles.css
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/scopedcss/projectbundle/Lap-1.bundle.scp.css
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/sya3kh5p32-lugek5hnai.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/dequo2etuq-61n19gt1b8.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/gr3dvvfai0-fr7q2aak1r.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/ej2dvgjtun-bqjiyaj88i.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/98xiq03ip1-c2jlpeoesf.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/klokw2nmma-erw9l3u2r3.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/ldhgv4sxkc-aexeepp0ev.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/tg016x95cg-d7shbmvgxk.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/90s5t54wun-ausgxo2sd3.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/dh0w0qmco0-k8d9w2qqmf.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/t0u2ato8tp-cosvhxvwiu.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/cwqrzl1h9o-ub07r2b239.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/j0uv9hw4xc-fvhpjtyr6v.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/22jj4trsec-b7pk76d08c.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/s7ujgglrk7-fsbi9cje9m.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/w4xw77styx-rzd6atqjts.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/l97ov8kgdr-ee0r1s7dh0.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/3je9govfac-dxx9fxp4il.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/cgai5t0gcw-jd9uben2k1.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/3fl5z34y8e-khv3u5hwcm.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/qz7kfxx97j-r4e9w2rdcm.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/t5x94vi37w-lcd1t2u6c8.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/4cegd2lhaa-c2oey78nd0.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/fxmtsxytkt-tdbxkamptv.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/o6n21pia0j-j5mq2jizvt.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/lt48k1kldf-06098lyss8.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/mhpdjq6867-nvvlpmu67g.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/o12kb46jw6-s35ty4nyc5.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/wazy3vsx52-pj5nd1wqec.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/8zt2glw272-46ein0sx1k.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/syxsu9w0zp-v0zj4ognzu.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/vy8gw25zk4-37tfw0ft22.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/ag8bw2auyn-hrwsygsryq.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/wg3z6ohj4z-pk9g2wxc8p.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/3s77p58dwp-ft3s53vfgj.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/nsyj135rib-6cfz1n2cew.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/1yd2m6chlh-6pdc2jztkx.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/1nwvnvwsv5-493y06b0oq.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/36bbsxtt7y-iovd86k7lj.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/dmn6k40mb0-vr1egmr9el.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/o2xa97ksh7-kbrnm935zg.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/b26g49ho8a-jj8uyg4cgr.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/1v6zwt0u5x-y7v9cxd14o.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/qgzbdtch2l-notf2xhcfb.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/d306wbu66y-h1s4sie4z3.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/0iryk9px4j-63fj8s7r0e.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/0r64kgufte-0j3bgjxly4.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/p7o65qzqyv-47otxtyo56.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/pzmj495rw0-4v8eqarkd7.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/udh4wbt6yx-l3n5xuwxn8.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/q31jebmj19-ilo7uva0vt.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/52mqvij1u1-qlccset4i1.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/qf2fj5hi5t-lzl9nlhx6b.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/irkak91s8k-ag7o75518u.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/zrhoqobgxx-xzw0cte36n.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/sqlsb77grj-0i3buxo5is.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/5fs4u1egrn-o1o13a6vjx.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/63r2zq8wrq-ttgo8qnofa.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/8klk9bt5hu-2z0ns9nrw6.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/xbi4qqdd0m-muycvpuwrr.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/65hqkji7vh-87fc7y1x7t.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/3nqad8h0h5-jfsiqqwiad.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/snt2lzcod4-qul74fuq9l.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/tlcen5t14x-qul74fuq9l.gz
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/staticwebassets.build.json
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/staticwebassets.build.json.cache
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/staticwebassets.development.json
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.dll
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/refint/Lap-1.dll
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.pdb
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.genruntimeconfig.cache
+/Users/sami/RiderProjects/ COMP2139-Lab1/Lap-1/obj/Debug/net9.0/ref/Lap-1.dll
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/bin/Debug/net9.0/appsettings.Development.json
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/bin/Debug/net9.0/appsettings.json
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/bin/Debug/net9.0/Lap-1.staticwebassets.endpoints.json
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/bin/Debug/net9.0/Lap-1.staticwebassets.runtime.json
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/bin/Debug/net9.0/Lap-1
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/bin/Debug/net9.0/Lap-1.deps.json
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/bin/Debug/net9.0/Lap-1.runtimeconfig.json
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/bin/Debug/net9.0/Lap-1.dll
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/bin/Debug/net9.0/Lap-1.pdb
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/rpswa.dswa.cache.json
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.AssemblyInfoInputs.cache
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.AssemblyInfo.cs
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.csproj.CoreCompileInputs.cache
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.MvcApplicationPartsAssemblyInfo.cache
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.RazorAssemblyInfo.cache
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.RazorAssemblyInfo.cs
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.sourcelink.json
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/rjimswa.dswa.cache.json
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/scopedcss/bundle/Lap-1.styles.css
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/scopedcss/projectbundle/Lap-1.bundle.scp.css
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/sya3kh5p32-lugek5hnai.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/dequo2etuq-61n19gt1b8.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/gr3dvvfai0-fr7q2aak1r.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/ej2dvgjtun-bqjiyaj88i.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/98xiq03ip1-c2jlpeoesf.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/klokw2nmma-erw9l3u2r3.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/ldhgv4sxkc-aexeepp0ev.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/tg016x95cg-d7shbmvgxk.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/90s5t54wun-ausgxo2sd3.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/dh0w0qmco0-k8d9w2qqmf.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/t0u2ato8tp-cosvhxvwiu.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/cwqrzl1h9o-ub07r2b239.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/j0uv9hw4xc-fvhpjtyr6v.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/22jj4trsec-b7pk76d08c.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/s7ujgglrk7-fsbi9cje9m.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/w4xw77styx-rzd6atqjts.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/l97ov8kgdr-ee0r1s7dh0.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/3je9govfac-dxx9fxp4il.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/cgai5t0gcw-jd9uben2k1.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/3fl5z34y8e-khv3u5hwcm.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/qz7kfxx97j-r4e9w2rdcm.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/t5x94vi37w-lcd1t2u6c8.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/4cegd2lhaa-c2oey78nd0.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/fxmtsxytkt-tdbxkamptv.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/o6n21pia0j-j5mq2jizvt.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/lt48k1kldf-06098lyss8.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/mhpdjq6867-nvvlpmu67g.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/o12kb46jw6-s35ty4nyc5.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/wazy3vsx52-pj5nd1wqec.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/8zt2glw272-46ein0sx1k.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/syxsu9w0zp-v0zj4ognzu.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/vy8gw25zk4-37tfw0ft22.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/ag8bw2auyn-hrwsygsryq.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/wg3z6ohj4z-pk9g2wxc8p.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/3s77p58dwp-ft3s53vfgj.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/nsyj135rib-6cfz1n2cew.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/1yd2m6chlh-6pdc2jztkx.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/1nwvnvwsv5-493y06b0oq.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/36bbsxtt7y-iovd86k7lj.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/dmn6k40mb0-vr1egmr9el.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/o2xa97ksh7-kbrnm935zg.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/b26g49ho8a-jj8uyg4cgr.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/1v6zwt0u5x-y7v9cxd14o.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/qgzbdtch2l-notf2xhcfb.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/d306wbu66y-h1s4sie4z3.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/0iryk9px4j-63fj8s7r0e.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/0r64kgufte-0j3bgjxly4.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/p7o65qzqyv-47otxtyo56.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/pzmj495rw0-4v8eqarkd7.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/udh4wbt6yx-l3n5xuwxn8.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/q31jebmj19-ilo7uva0vt.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/52mqvij1u1-qlccset4i1.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/qf2fj5hi5t-lzl9nlhx6b.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/irkak91s8k-ag7o75518u.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/zrhoqobgxx-xzw0cte36n.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/sqlsb77grj-0i3buxo5is.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/5fs4u1egrn-o1o13a6vjx.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/63r2zq8wrq-ttgo8qnofa.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/8klk9bt5hu-2z0ns9nrw6.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/xbi4qqdd0m-muycvpuwrr.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/65hqkji7vh-87fc7y1x7t.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/3nqad8h0h5-jfsiqqwiad.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/snt2lzcod4-qul74fuq9l.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/compressed/tlcen5t14x-qul74fuq9l.gz
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/staticwebassets.build.json
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/staticwebassets.build.json.cache
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/staticwebassets.development.json
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.dll
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/refint/Lap-1.dll
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.pdb
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/Lap-1.genruntimeconfig.cache
+/Users/sami/RiderProjects/COMP2139-Lab1/Lap-1/obj/Debug/net9.0/ref/Lap-1.dll
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/bin/Debug/net9.0/appsettings.Development.json
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/bin/Debug/net9.0/appsettings.json
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/bin/Debug/net9.0/Lap-1.staticwebassets.endpoints.json
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/bin/Debug/net9.0/Lap-1.staticwebassets.runtime.json
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/bin/Debug/net9.0/Lap-1
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/bin/Debug/net9.0/Lap-1.deps.json
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/bin/Debug/net9.0/Lap-1.runtimeconfig.json
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/bin/Debug/net9.0/Lap-1.dll
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/bin/Debug/net9.0/Lap-1.pdb
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/rpswa.dswa.cache.json
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/Lap-1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/Lap-1.AssemblyInfoInputs.cache
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/Lap-1.AssemblyInfo.cs
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/Lap-1.csproj.CoreCompileInputs.cache
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/Lap-1.MvcApplicationPartsAssemblyInfo.cache
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/Lap-1.RazorAssemblyInfo.cache
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/Lap-1.RazorAssemblyInfo.cs
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/Lap-1.sourcelink.json
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/rjimswa.dswa.cache.json
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/scopedcss/bundle/Lap-1.styles.css
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/scopedcss/projectbundle/Lap-1.bundle.scp.css
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/sya3kh5p32-lugek5hnai.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/dequo2etuq-61n19gt1b8.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/gr3dvvfai0-fr7q2aak1r.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/ej2dvgjtun-bqjiyaj88i.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/98xiq03ip1-c2jlpeoesf.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/klokw2nmma-erw9l3u2r3.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/ldhgv4sxkc-aexeepp0ev.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/tg016x95cg-d7shbmvgxk.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/90s5t54wun-ausgxo2sd3.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/dh0w0qmco0-k8d9w2qqmf.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/t0u2ato8tp-cosvhxvwiu.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/cwqrzl1h9o-ub07r2b239.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/j0uv9hw4xc-fvhpjtyr6v.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/22jj4trsec-b7pk76d08c.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/s7ujgglrk7-fsbi9cje9m.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/w4xw77styx-rzd6atqjts.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/l97ov8kgdr-ee0r1s7dh0.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/3je9govfac-dxx9fxp4il.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/cgai5t0gcw-jd9uben2k1.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/3fl5z34y8e-khv3u5hwcm.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/qz7kfxx97j-r4e9w2rdcm.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/t5x94vi37w-lcd1t2u6c8.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/4cegd2lhaa-c2oey78nd0.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/fxmtsxytkt-tdbxkamptv.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/o6n21pia0j-j5mq2jizvt.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/lt48k1kldf-06098lyss8.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/mhpdjq6867-nvvlpmu67g.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/o12kb46jw6-s35ty4nyc5.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/wazy3vsx52-pj5nd1wqec.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/8zt2glw272-46ein0sx1k.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/syxsu9w0zp-v0zj4ognzu.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/vy8gw25zk4-37tfw0ft22.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/ag8bw2auyn-hrwsygsryq.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/wg3z6ohj4z-pk9g2wxc8p.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/3s77p58dwp-ft3s53vfgj.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/nsyj135rib-6cfz1n2cew.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/1yd2m6chlh-6pdc2jztkx.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/1nwvnvwsv5-493y06b0oq.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/36bbsxtt7y-iovd86k7lj.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/dmn6k40mb0-vr1egmr9el.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/o2xa97ksh7-kbrnm935zg.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/b26g49ho8a-jj8uyg4cgr.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/1v6zwt0u5x-y7v9cxd14o.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/qgzbdtch2l-notf2xhcfb.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/d306wbu66y-h1s4sie4z3.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/0iryk9px4j-63fj8s7r0e.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/0r64kgufte-0j3bgjxly4.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/p7o65qzqyv-47otxtyo56.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/pzmj495rw0-4v8eqarkd7.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/udh4wbt6yx-l3n5xuwxn8.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/q31jebmj19-ilo7uva0vt.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/52mqvij1u1-qlccset4i1.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/qf2fj5hi5t-lzl9nlhx6b.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/irkak91s8k-ag7o75518u.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/zrhoqobgxx-xzw0cte36n.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/sqlsb77grj-0i3buxo5is.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/5fs4u1egrn-o1o13a6vjx.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/63r2zq8wrq-ttgo8qnofa.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/8klk9bt5hu-2z0ns9nrw6.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/xbi4qqdd0m-muycvpuwrr.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/65hqkji7vh-87fc7y1x7t.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/3nqad8h0h5-jfsiqqwiad.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/snt2lzcod4-qul74fuq9l.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/compressed/tlcen5t14x-qul74fuq9l.gz
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/staticwebassets.build.json
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/staticwebassets.build.json.cache
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/staticwebassets.development.json
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/Lap-1.dll
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/refint/Lap-1.dll
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/Lap-1.pdb
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/Lap-1.genruntimeconfig.cache
+/Users/sami/RiderProjects/COMP2139-ICE/COMP2139-ICE/obj/Debug/net9.0/ref/Lap-1.dll
