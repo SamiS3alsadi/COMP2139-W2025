@@ -1,7 +1,7 @@
-using System;
-using System.Collections.Generic;
+
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Lap_1.Data;
 using Lap_1.Models;
 
 namespace Lap_1.Controllers
