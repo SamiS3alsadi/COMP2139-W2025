@@ -10,6 +10,6 @@ namespace Lap_1.Data
         {
         }
 
-        public DbSet<Project> Projects { get; set; }
+        public DbSet<Project> Projects { get; set; } = null!;
     }
 }

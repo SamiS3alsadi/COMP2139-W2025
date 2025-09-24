@@ -20,8 +20,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-// Comment this in dev if you saw blank pages
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 app.UseRouting();
@@ -34,6 +33,6 @@ app.MapControllerRoute(
 );
 
 // Fixed dev URL
-app.Urls.Add("http://localhost:5000");
+//app.Urls.Add("http://localhost:5167");
 
 app.Run();

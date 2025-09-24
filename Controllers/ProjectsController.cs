@@ -1,6 +1,5 @@
-
-using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Lap_1.Data;
 using Lap_1.Models;
 
@@ -8,26 +7,40 @@ namespace Lap_1.Controllers
 {
     public class ProjectsController : Controller
     {
-        private static readonly List<Project> _projects = new();
+        private readonly ApplicationDbContext _context;
 
-        public IActionResult Index() => View(_projects);
+        public ProjectsController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        // GET: /Projects
+        public async Task<IActionResult> Index()
+        {
+            var projects = await _context.Projects
+                .OrderByDescending(p => p.Id)
+                .ToListAsync();
+            return View(projects);
+        }
 
         public IActionResult Create() => View(new Project());
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Project project)
+        public async Task<IActionResult> Create(Project project)
         {
-            if (!ModelState.IsValid) return View(project);
-            project.Id = _projects.Count == 0 ? 1 : _projects.Max(p => p.Id) + 1;
-            project.CreatedAt = DateTime.Now;
-            _projects.Add(project);
+            if (!ModelState.IsValid)
+                return View(project);
+
+            project.CreatedAt = DateTime.UtcNow;   
+            _context.Projects.Add(project);
+            await _context.SaveChangesAsync();     
             return RedirectToAction(nameof(Index));
         }
 
-        public IActionResult Details(int id)
+        public async Task<IActionResult> Details(int id)
         {
-            var project = _projects.FirstOrDefault(p => p.Id == id);
+            var project = await _context.Projects.FirstOrDefaultAsync(p => p.Id == id);
             if (project == null) return NotFound();
             return View(project);
         }
