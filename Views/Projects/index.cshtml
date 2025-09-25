@@ -1,9 +1,15 @@
 @model IEnumerable<Lap_1.Models.Project>
+
 @{
     ViewData["Title"] = "Projects";
 }
+
 <h2>Projects</h2>
-<p><a class="btn btn-primary" asp-action="Create">Create New Project</a></p>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Create New Project</a>
+</p>
+
 @if (!Model.Any())
 {
     <p>No projects yet. Click “Create New Project”.</p>
@@ -11,7 +17,14 @@
 else
 {
     <table class="table">
-        <thead><tr><th>Name</th><th>Description</th><th>Created</th><th></th></tr></thead>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Created</th>
+            <th></th>
+        </tr>
+        </thead>
         <tbody>
         @foreach (var p in Model)
         {
@@ -19,7 +32,11 @@ else
                 <td>@p.Name</td>
                 <td>@p.Description</td>
                 <td>@p.CreatedAt.ToString("yyyy-MM-dd HH:mm")</td>
-                <td><a asp-action="Details" asp-route-id="@p.Id">Details</a></td>
+                <td>
+                    <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@p.Id">Details</a>
+                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@p.Id">Edit</a>
+                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@p.Id">Delete</a>
+                </td>
             </tr>
         }
         </tbody>
