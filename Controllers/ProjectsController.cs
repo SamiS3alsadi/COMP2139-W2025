@@ -28,6 +28,10 @@ namespace Lap_1.Controllers
             if (!ModelState.IsValid) return View(project);
 
             project.CreatedAt = DateTime.UtcNow;
+            if (project.StartDate.HasValue)
+                project.StartDate = DateTime.SpecifyKind(project.StartDate.Value, DateTimeKind.Utc);
+            if (project.EndDate.HasValue)
+                project.EndDate = DateTime.SpecifyKind(project.EndDate.Value, DateTimeKind.Utc);
             _context.Projects.Add(project);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -91,6 +95,14 @@ namespace Lap_1.Controllers
                 _context.SaveChanges();
             }
             return RedirectToAction(nameof(Index));
+        }
+        // helper normalize data values to utc so postgres accept them 
+        private static DateTime? ToUtc(DateTime? dt)
+        {
+            if (!dt.HasValue) return null;
+            return dt.Value.Kind == DateTimeKind.Utc
+                ? dt
+                :DateTime.SpecifyKind(dt.Value, DateTimeKind.Utc);
         }
 
         private bool ProjectExists(int id) => _context.Projects.Any(e => e.Id == id);

@@ -27,8 +27,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home1}/{action=Index}/{id?}"
 );
-
 // Fixed dev URL
-//app.Urls.Add("http://localhost:5167");
+app.Urls.Add("http://localhost:5167");
 
 app.Run();

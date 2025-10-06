@@ -1,0 +1,18 @@
+@model Lap_1.Models.ProjectTask
+@{
+    ViewData["Title"] = "Task Details";
+}
+
+<h2>Task Details</h2>
+
+<dl class="row">
+    <dt class="col-sm-3">Task Id</dt><dd class="col-sm-9">@Model.ProjectTaskId</dd>
+    <dt class="col-sm-3">Title</dt><dd class="col-sm-9">@Model.Title</dd>
+    <dt class="col-sm-3">Description</dt><dd class="col-sm-9">@Model.Description</dd>
+    <dt class="col-sm-3">Project Id</dt><dd class="col-sm-9">@Model.ProjectId</dd>
+</dl>
+
+<p>
+    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model.ProjectTaskId">Edit</a>
+    <a class="btn btn-secondary" asp-action="Index" asp-route-projectId="@Model.ProjectId">Back to Tasks</a>
+</p>
