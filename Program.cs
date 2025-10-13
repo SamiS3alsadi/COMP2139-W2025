@@ -16,11 +16,12 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
-
-
+app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
+
+app.UseStatusCodePagesWithReExecute("/Home1/NotFound");
 
 // Default route → Home1/Index
 app.MapControllerRoute(

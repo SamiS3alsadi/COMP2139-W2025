@@ -4,7 +4,15 @@
     ViewData["Title"] = "Tasks";
     var project = ViewBag.Project as Project;
 }
+<form asp-action="Search" method="get" class="d-flex mb-3">
+    <input type="text" name="query" value="@ViewBag.Query" placeholder="Search tasks..." class="form-control me-2" />
+    <button type="submit" class="btn btn-outline-primary">Search</button>
+</form>
 
+@if (ViewBag.Searched != null && !Model.Any())
+{
+    <p class="text-danger">No matching tasks found.</p>
+}
 <h2>Tasks for: @project?Name (@project?.Id)</h2>
 <p>
     <a class="btn btn-primary" asp-action="Create" asp-route-projectId="@project?.Id"> Create New Task</a>

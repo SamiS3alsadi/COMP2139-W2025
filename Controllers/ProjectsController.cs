@@ -6,10 +6,13 @@ using System.Linq;
 
 namespace Lap_1.Controllers
 {
+    [Route("projects")]
     public class ProjectsController : Controller
     {
         private readonly ApplicationDbContext _context;
         public ProjectsController(ApplicationDbContext context) => _context = context;
+        
+        [HttpGet("")]
 
         public async Task<IActionResult> Index()
         {
@@ -18,24 +21,25 @@ namespace Lap_1.Controllers
                 .ToListAsync();
             return View(projects);
         }
+        [HttpGet("create")]
+
 
         public IActionResult Create() => View(new Project());
-
-        [HttpPost]
+        
+        [HttpPost("create")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Project project)
         {
             if (!ModelState.IsValid) return View(project);
 
             project.CreatedAt = DateTime.UtcNow;
-            if (project.StartDate.HasValue)
-                project.StartDate = DateTime.SpecifyKind(project.StartDate.Value, DateTimeKind.Utc);
-            if (project.EndDate.HasValue)
-                project.EndDate = DateTime.SpecifyKind(project.EndDate.Value, DateTimeKind.Utc);
+            project.StartDate = ToUtc(project.StartDate);
+            project.EndDate = ToUtc(project.EndDate);
             _context.Projects.Add(project);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        [HttpGet("details/{id:int}")]
 
         public async Task<IActionResult> Details(int id)
         {
@@ -43,25 +47,32 @@ namespace Lap_1.Controllers
             if (project == null) return NotFound();
             return View(project);
         }
+        [HttpGet("edit/{id:int}")]
 
-        [HttpGet]
         public IActionResult Edit(int id)
         {
             var project = _context.Projects.Find(id);
             if (project == null) return NotFound();
             return View(project);
         }
+        [HttpPost("edit/{id:int}")]
 
-        [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("Id,Name,Description")] Project project)
+        public IActionResult Edit(int id, [Bind("Id,Name,Description,StartDate,EndDate,Status")] Project project)
         {
             if (id != project.Id) return NotFound();
+            project.StartDate = ToUtc(project.StartDate);
+            project.EndDate = ToUtc(project.EndDate);
 
             if (ModelState.IsValid)
             {
                 try
                 {
+                    var existing = _context.Projects
+                        .AsNoTracking()
+                        .FirstOrDefault(p => p.Id == id);
+                    if (existing == null) return NotFound();
+                    project.CreatedAt = existing.CreatedAt;
                     _context.Projects.Update(project);
                     _context.SaveChanges();
                 }
@@ -75,16 +86,17 @@ namespace Lap_1.Controllers
 
             return View(project);
         }
+        [HttpGet("delete/{id:int}")]
 
-        [HttpGet]
+
         public IActionResult Delete(int id)
         {
             var project = _context.Projects.FirstOrDefault(p => p.Id == id);
             if (project == null) return NotFound();
             return View(project);
         }
-
-        [HttpPost, ActionName("DeleteConfirmed")]
+        [HttpPost("delete/{id:int}")]
+        [ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)
         {
@@ -100,9 +112,26 @@ namespace Lap_1.Controllers
         private static DateTime? ToUtc(DateTime? dt)
         {
             if (!dt.HasValue) return null;
-            return dt.Value.Kind == DateTimeKind.Utc
-                ? dt
-                :DateTime.SpecifyKind(dt.Value, DateTimeKind.Utc);
+            var v = dt.Value;
+            if (v.Kind != DateTimeKind.Utc)
+                v = DateTime.SpecifyKind(v, DateTimeKind.Utc);
+            return v.ToUniversalTime();
+        }
+        [HttpGet("search")]
+        public async Task<IActionResult> Search(string query)
+        {
+            bool searched = !string.IsNullOrWhiteSpace(query);
+
+            var projects = string.IsNullOrEmpty(query)
+                ? await _context.Projects.OrderByDescending(p => p.Id).ToListAsync()
+                : await _context.Projects
+                    .Where(p => p.Name.Contains(query) || p.Description.Contains(query))
+                    .OrderByDescending(p => p.Id)
+                    .ToListAsync();
+
+            ViewBag.Query = query;
+            ViewBag.Searched = searched;
+            return View("Index", projects); 
         }
 
         private bool ProjectExists(int id) => _context.Projects.Any(e => e.Id == id);

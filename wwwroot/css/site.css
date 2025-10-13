@@ -29,3 +29,39 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+/*lab 6 custom */
+/*nav space and color*/
+.navbar {
+    background-color: #0d6efd; 
+}
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: black !important;
+}
+.navbar .nav-link:hover {
+    color: #ffc107 !important;
+}
+/*search box */
+.navbar form .form-control {
+    border-radius: 5px;
+    min-width: 180px;
+}
+/*buttons*/
+.btn-primary {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+.btn-primary:hover {
+    background-color: #0a58ca;
+}
+/*footer*/
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+/*tables*/
+.table th {
+    background-color: #f1f1f1;
+}

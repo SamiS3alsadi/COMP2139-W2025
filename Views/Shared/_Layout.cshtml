@@ -30,7 +30,7 @@
             </button>
 
             <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-controller="Home1" asp-action="Index">
                             <i class="fa-solid fa-house"></i> Home
@@ -52,6 +52,16 @@
                         <a class="nav-link text-dark" asp-controller="Home" asp-action="Privacy">Privacy</a>
                     </li> *@
                 </ul>
+                <form class="d-flex ms-auto" asp-controller="Home1" asp-action="Search" method="get">
+                    <input class="form-control me-2" type="search" name="query" placeholder="Search..." aria-label="Search" />
+                    <select class="form-select me-2" name="type">
+                        <option value="Projects">Projects</option>
+                        <option value="Tasks">Tasks</option>
+                    </select>
+                    <button class="btn btn-outline-primary" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
             </div>
         </div>
     </nav>

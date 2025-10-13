@@ -22,7 +22,6 @@
 /Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/scopedcss/bundle/COMP2139-ICE.styles.css
 /Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/scopedcss/projectbundle/COMP2139-ICE.bundle.scp.css
-/Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/compressed/2lpzs2ad9x-lugek5hnai.gz
 /Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/compressed/hyysavb756-61n19gt1b8.gz
 /Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/compressed/mtj3tgikg3-fr7q2aak1r.gz
 /Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/compressed/0hyxda7cm4-bqjiyaj88i.gz
@@ -195,3 +194,4 @@
 /Users/sami/RiderProjects/COMP2139-ICE/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 /Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.csproj.AssemblyReference.cache
 /Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/COMP2139.7F31028D.Up2Date
+/Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/compressed/2lpzs2ad9x-4zm70lyab0.gz

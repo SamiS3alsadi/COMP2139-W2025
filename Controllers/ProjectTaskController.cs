@@ -7,11 +7,13 @@ using System.Linq;
 namespace Lap_1.Controllers
 
 {
+    [Route("tasks")]
     public class ProjectTaskController : Controller
     {
         private readonly ApplicationDbContext _context;
         public ProjectTaskController(ApplicationDbContext context) => _context = context;
         //get projecttassk?projectId=15
+        [HttpGet("")]
         public async Task<IActionResult> Index(int projectId)
         {
             var project = await _context.Projects.FindAsync(projectId);
@@ -26,7 +28,7 @@ namespace Lap_1.Controllers
             return View(tasks);
         }
         //get detail/5
-        [HttpGet]
+        [HttpGet("details/{id:int}")]
         public async Task<IActionResult> Details(int id)
         {
             var task = await _context.ProjectTasks
@@ -35,17 +37,39 @@ namespace Lap_1.Controllers
             if (task == null) return NotFound();
             return View(task);
         }
+        // GET: /ProjectTask/Search
+        [HttpGet("search")]
+        public async Task<IActionResult> Search(string query)
+        {
+            bool searched = !string.IsNullOrWhiteSpace(query);
+
+            var tasks = string.IsNullOrEmpty(query)
+                ? await _context.ProjectTasks
+                    .OrderBy(t => t.ProjectTaskId)
+                    .ToListAsync()
+                : await _context.ProjectTasks
+                    .Where(t => t.Title.Contains(query) || t.Description.Contains(query))
+                    .OrderBy(t => t.ProjectTaskId)
+                    .ToListAsync();
+
+            ViewBag.Query = query;
+            ViewBag.Searched = searched;
+
+            return View("Index", tasks);
+        }
         //Get; /ProjecCreate?projectId=15
-        [HttpGet]
+        [HttpGet("create")]
         public async Task<IActionResult> Create(int projectId)
         {
             var project = await _context.Projects.FindAsync(projectId);
             if (project == null) return NotFound();
+            
+            ViewBag.Project = project; 
 
             return View(new ProjectTask { ProjectId = projectId });
         }
         //project /create 
-        [HttpPost]
+        [HttpPost("create")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(int projectId, ProjectTask task)
         {
@@ -61,7 +85,7 @@ namespace Lap_1.Controllers
             return RedirectToAction(nameof(Index), new { projectId = task.ProjectId });
         }
         // get; edit3
-        [HttpGet]
+        [HttpGet("edit/{id:int}")]
         public async Task<IActionResult> Edit(int id)
         {
             var task = await _context.ProjectTasks.FindAsync(id);
@@ -69,7 +93,7 @@ namespace Lap_1.Controllers
             return View(task);
         }
         // post; edit3
-        [HttpPost]
+        [HttpPost("edit/{id:int}")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ProjectTaskId,Title,Description,ProjectId")] ProjectTask task)
         {
@@ -88,11 +112,9 @@ namespace Lap_1.Controllers
                 if (!exists) return NotFound();
                 throw;
             }
-
-            return View(task);
         }
         //get; delete3
-        [HttpGet]
+        [HttpGet("delete/{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
             var task = await _context.ProjectTasks.FirstOrDefaultAsync(t => t.ProjectTaskId == id);
@@ -100,8 +122,7 @@ namespace Lap_1.Controllers
             return View(task);
         }
         //post; delete 3
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        [HttpPost("delete/{id:int}"), ActionName("Delete"), ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var task = await _context.ProjectTasks.FindAsync(id);
