@@ -1,0 +1,93 @@
+@model IEnumerable<Lap_1.Areas.ProjectManagement.Models.ProjectTask>
+@{
+    ViewData["Title"] = "Tasks";
+    var project = ViewBag.Project as Lap_1.Areas.ProjectManagement.Models.Project;
+    string query = ViewBag.Query as string ?? "";
+    bool searched = ViewBag.Searched as bool? ?? false;
+}
+
+<h2>Tasks for: @project?.Name (@project?.Id)</h2>
+
+<form asp-area="ProjectManagement" asp-controller="ProjectTask" asp-action="Index" method="get" class="mb-3">
+    <input type="hidden" name="projectId" value="@project?.Id" />
+    <div class="input-group">
+        <input name="query" value="@query" class="form-control" placeholder="Search tasks..." />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+        <a class="btn btn-outline-secondary" asp-area="ProjectManagement"
+           asp-controller="ProjectTask" asp-action="Index" asp-route-projectId="@project?.Id">
+            Clear
+        </a>
+    </div>
+</form>
+
+@if (searched && !Model.Any())
+{
+    <div class="alert alert-warning">No tasks found for "<strong>@query</strong>".</div>
+}
+
+<p>
+    <a class="btn btn-primary"
+       asp-area="ProjectManagement"
+       asp-controller="ProjectTask"
+       asp-action="Create"
+       asp-route-projectId="@project?.Id">
+        + New Task
+    </a>
+    <a class="btn btn-secondary"
+       asp-area="ProjectManagement"
+       asp-controller="Projects"
+       asp-action="Index">
+        ⬅ Back to Projects
+    </a>
+</p>
+
+@if (!Model.Any())
+{
+    <p>No tasks yet. Click “New Task”.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th class="text-end">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var t in Model)
+        {
+            <tr>
+                <td>@t.TaskId</td>
+                <td>@t.Title</td>
+                <td>@t.Description</td>
+                <td class="text-end">
+                    <a class="btn btn-info btn-sm"
+                       asp-area="ProjectManagement"
+                       asp-controller="ProjectTask"
+                       asp-action="Details"
+                       asp-route-id="@t.TaskId">
+                        Details
+                    </a>
+                    <a class="btn btn-warning btn-sm"
+                       asp-area="ProjectManagement"
+                       asp-controller="ProjectTask"
+                       asp-action="Edit"
+                       asp-route-id="@t.TaskId">
+                        Edit
+                    </a>
+                    <a class="btn btn-danger btn-sm"
+                       asp-area="ProjectManagement"
+                       asp-controller="ProjectTask"
+                       asp-action="Delete"
+                       asp-route-id="@t.TaskId">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

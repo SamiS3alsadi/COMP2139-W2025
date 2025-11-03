@@ -28,12 +28,72 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[/Users/sami/RiderProjects/COMP2139-ICE/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/DisplayTemplates/DateTime.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvRGlzcGxheVRlbXBsYXRlcy9EYXRlVGltZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sami/RiderProjects/COMP2139-ICE/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/DisplayTemplates/ProjectDescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvRGlzcGxheVRlbXBsYXRlcy9Qcm9qZWN0RGVzY3JpcHRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/DisplayTemplates/ProjectName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvRGlzcGxheVRlbXBsYXRlcy9Qcm9qZWN0TmFtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/DisplayTemplates/ProjectTaskTitle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvRGlzcGxheVRlbXBsYXRlcy9Qcm9qZWN0VGFza1RpdGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/Projects/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvUHJvamVjdHMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/Projects/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvUHJvamVjdHMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/Projects/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvUHJvamVjdHMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/Projects/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvUHJvamVjdHMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/Projects/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvUHJvamVjdHMvaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/ProjectTask/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvUHJvamVjdFRhc2svQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/ProjectTask/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvUHJvamVjdFRhc2svRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/ProjectTask/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvUHJvamVjdFRhc2svRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/ProjectTask/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvUHJvamVjdFRhc2svRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/ProjectTask/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvUHJvamVjdFRhc2svSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Areas/ProjectManagement/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvamVjdE1hbmFnZW1lbnQvVmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sami/RiderProjects/COMP2139-ICE/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/sami/RiderProjects/COMP2139-ICE/Views/Home1/About.cshtml]
@@ -42,46 +102,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/sami/RiderProjects/COMP2139-ICE/Views/Home1/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZTEvaW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/sami/RiderProjects/COMP2139-ICE/Views/Projects/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdHMvQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/sami/RiderProjects/COMP2139-ICE/Views/Projects/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdHMvRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/sami/RiderProjects/COMP2139-ICE/Views/Projects/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdHMvRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/sami/RiderProjects/COMP2139-ICE/Views/Projects/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdHMvRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/sami/RiderProjects/COMP2139-ICE/Views/Projects/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdHMvaW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/sami/RiderProjects/COMP2139-ICE/Views/ProjectTask/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdFRhc2svQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/sami/RiderProjects/COMP2139-ICE/Views/ProjectTask/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdFRhc2svRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/sami/RiderProjects/COMP2139-ICE/Views/ProjectTask/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdFRhc2svRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/sami/RiderProjects/COMP2139-ICE/Views/ProjectTask/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdFRhc2svRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/sami/RiderProjects/COMP2139-ICE/Views/ProjectTask/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdFRhc2svSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/sami/RiderProjects/COMP2139-ICE/Views/Shared/Error.cshtml]

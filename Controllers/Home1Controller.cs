@@ -13,14 +13,16 @@ namespace Lap_1.Controllers
             // default to projects if nothing selected
             type = string.IsNullOrWhiteSpace(type) ? "Projects" : type;
 
-            if (type == "Tasks")
-                return RedirectToAction("Search", "ProjectTask", new { query });
+            if (type.Equals("Tasks", StringComparison.OrdinalIgnoreCase))
+            {
+                return RedirectToAction("Search", "ProjectTask", new { area = "ProjectManagement", query });
+            }
 
-            return RedirectToAction("Search", "Projects", new { query });
+            return RedirectToAction("Search", "Projects", new { area = "ProjectManagement", query });
         }
 
         [Route("Home1/NotFound")]
-        public IActionResult NotFound()
+        public new IActionResult NotFound()
         {
             return View();
         }

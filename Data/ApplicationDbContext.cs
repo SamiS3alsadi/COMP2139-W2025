@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Lap_1.Models;   
+using Lap_1.Areas.ProjectManagement.Models;
 
 namespace Lap_1.Data   
 {

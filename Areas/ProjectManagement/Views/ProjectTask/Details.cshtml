@@ -1,0 +1,56 @@
+@model Lap_1.Areas.ProjectManagement.Models.ProjectTask
+@{
+    ViewData["Title"] = "Task Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Task Details</h2>
+
+@if (Model == null)
+{
+    <div class="alert alert-warning" role="alert">
+        Task details are not available.
+    </div>
+}
+else
+{
+    <div class="card mb-3">
+        <div class="card-header">
+            <h3>Task Details</h3>
+        </div>
+        <div class="card-body">
+            <dl class="row mb-0">
+                <dt class="col-sm-3 fw-bold">Task Title</dt>
+                <dd class="col-sm-9" style="color: green; font-weight: bold;">@Model.Title</dd>
+
+                <dt class="col-sm-3 fw-bold">Task Description</dt>
+                <dd class="col-sm-9">@Model.Description</dd>
+                
+                @if (Model.Project != null)
+                {
+                    <dt class="col-sm-3 fw-bold">Project Name</dt>
+                    <dd class="col-sm-9">@Model.Project.Name</dd>
+                }
+                else
+                {
+                    <dt class="col-sm-3 fw-bold">Project Name</dt>
+                    <dd class="col-sm-9 text-muted">No project assigned</dd>
+                }
+            </dl>
+        </div>
+    </div>
+
+    <p>
+        <a class="btn btn-primary"
+           asp-area="ProjectManagement"
+           asp-controller="ProjectTask"
+           asp-action="Edit"
+           asp-route-id="@Model.TaskId">Edit</a>
+
+        <a class="btn btn-secondary"
+           asp-area="ProjectManagement"
+           asp-controller="ProjectTask"
+           asp-action="Index"
+           asp-route-projectId="@Model.ProjectId">Back to Tasks</a>
+    </p>
+}

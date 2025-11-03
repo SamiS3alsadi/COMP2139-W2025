@@ -1,15 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Lap_1</title>
 
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/Lap_1.styles.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Lap_1.styles.css" asp-append-version="true" />
 
-    <!-- Font Awesome -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
           crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,7 +17,7 @@
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container-fluid">
-            <a class="navbar-brand" asp-controller="Home1" asp-action="Index">
+            <a class="navbar-brand" asp-area="" asp-controller="Home1" asp-action="Index">
                 <i class="fa-solid fa-graduation-cap me-2"></i>
                 COMP2139 GBC Project Management – Sami Al-sadi
             </a>
@@ -32,27 +31,27 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Home1" asp-action="Index">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home1" asp-action="Index">
                             <i class="fa-solid fa-house"></i> Home
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Projects" asp-action="Index">
+                        <!-- IMPORTANT: include Area so it routes to /ProjectManagement/Projects -->
+                        <a class="nav-link text-dark"
+                           asp-area="ProjectManagement"
+                           asp-controller="Projects"
+                           asp-action="Index">
                             <i class="fa-solid fa-list"></i> Projects
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Home1" asp-action="About">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home1" asp-action="About">
                             <i class="fa-regular fa-address-card"></i> About
                         </a>
                     </li>
-
-                    @* Privacy removed per lab *@
-                    @* <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                    </li> *@
                 </ul>
-                <form class="d-flex ms-auto" asp-controller="Home1" asp-action="Search" method="get">
+
+                <form class="d-flex ms-auto" asp-area="" asp-controller="Home1" asp-action="Search" method="get">
                     <input class="form-control me-2" type="search" name="query" placeholder="Search..." aria-label="Search" />
                     <select class="form-select me-2" name="type">
                         <option value="Projects">Projects</option>

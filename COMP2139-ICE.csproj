@@ -17,4 +17,11 @@
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\DisplayTemplates\DateTime.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\DisplayTemplates\ProjectDescription.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\DisplayTemplates\ProjectName.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\DisplayTemplates\ProjectTaskTitle.cshtml" />
+    </ItemGroup>
+
 </Project>

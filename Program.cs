@@ -23,12 +23,14 @@ app.UseAuthorization();
 
 app.UseStatusCodePagesWithReExecute("/Home1/NotFound");
 
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Projects}/{action=Index}/{id?}"
+);
+
 // Default route → Home1/Index
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home1}/{action=Index}/{id?}"
 );
-// Fixed dev URL
-app.Urls.Add("http://localhost:5167");
-
 app.Run();

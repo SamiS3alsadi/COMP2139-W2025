@@ -1,0 +1,38 @@
+@model Lap_1.Areas.ProjectManagement.Models.Project
+@{
+    ViewData["Title"] = "Project Details";
+}
+
+<h2 class="mb-3">@Html.DisplayFor(m => m.Name)</h2>
+
+<div class="card shadow-sm p-4">
+    <dl class="row">
+        <dt class="col-sm-3 fw-bold">Description</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(m => m.Description)</dd>
+
+        <dt class="col-sm-3 fw-bold">Created</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(m => m.CreatedAt)</dd>
+
+        <dt class="col-sm-3 fw-bold">Start Date</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(m => m.StartDate)</dd>
+
+        <dt class="col-sm-3 fw-bold">End Date</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(m => m.EndDate)</dd>
+
+        <dt class="col-sm-3 fw-bold">Status</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(m => m.Status)</dd>
+    </dl>
+</div>
+
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning me-2">
+        <i class="fa-solid fa-pen-to-square"></i> Edit
+    </a>
+    <a asp-action="Index" class="btn btn-secondary">
+        <i class="fa-solid fa-arrow-left"></i> Back to List
+    </a>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
