@@ -6,9 +6,8 @@ namespace Lap_1.Areas.ProjectManagement.Models
     public class ProjectTask
     {
         [Key]
-        [Column("ProjectTaskId")]                
         [Display(Name = "Task ID")]
-        public int TaskId { get; set; }          
+        public int ProjectTaskId { get; set; }  
 
         [Required, StringLength(100)]
         [Display(Name = "Task Title")]

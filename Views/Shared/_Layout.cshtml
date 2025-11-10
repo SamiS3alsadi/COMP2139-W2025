@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Lap_1</title>
+    <title>@ViewData["Title"] - COMP2139 GBC Project Management</title>
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -14,15 +14,17 @@
           crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-@Html.Partial("_Header")
+    <!-- Header Partial -->
+    @Html.Partial("_Header")
 
-<div class="container">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
-</div>
+    <div class="container bg-light mt-3 rounded shadow-sm p-3">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
 
-@Html.Partial("_Footer")
+    <!-- Footer Partial -->
+    @Html.Partial("_Footer")
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

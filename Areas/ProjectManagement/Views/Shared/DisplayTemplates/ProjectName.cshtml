@@ -1,0 +1,10 @@
+@model string
+
+@if (!string.IsNullOrEmpty(Model))
+{
+    <strong>@Model</strong>
+}
+else
+{
+    <span class="text-muted">Unnamed Project</span>
+}

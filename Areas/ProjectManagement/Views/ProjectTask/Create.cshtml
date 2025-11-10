@@ -1,43 +1,43 @@
 @model Lap_1.Areas.ProjectManagement.Models.ProjectTask
+
 @{
     ViewData["Title"] = "Create Task";
-    Layout = "~/Views/Shared/_Layout.cshtml"; 
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="card p-4 shadow-sm mt-4">
-    <h2 class="mb-4 text-primary"><i class="fa-solid fa-plus-circle me-2"></i>Create Task</h2>
+<h2>@ViewData["Title"]</h2>
 
-    <form asp-area="ProjectManagement" asp-controller="ProjectTask" asp-action="Create" method="post">
-        @Html.AntiForgeryToken()
-        <input type="hidden" asp-for="ProjectId" />
+<form asp-area="ProjectManagement" asp-controller="ProjectTask" asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
 
-        <div class="mb-3">
-            <label asp-for="Title" class="form-label fw-bold"></label>
-            <input asp-for="Title" class="form-control" placeholder="Enter task title" />
-            <span asp-validation-for="Title" class="text-danger"></span>
-        </div>
+    @Html.HiddenFor(model => model.ProjectId)
 
-        <div class="mb-3">
-            <label asp-for="Description" class="form-label fw-bold"></label>
-            <textarea asp-for="Description" class="form-control" rows="3" placeholder="Enter task description"></textarea>
-            <span asp-validation-for="Description" class="text-danger"></span>
-        </div>
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
 
-        <div class="d-flex gap-2">
-            <button type="submit" class="btn btn-primary">
-                <i class="fa-solid fa-save me-1"></i> Save
-            </button>
-            <a class="btn btn-secondary"
-               asp-area="ProjectManagement"
-               asp-controller="ProjectTask"
-               asp-action="Index"
-               asp-route-projectId="@Model?.ProjectId">
-                <i class="fa-solid fa-arrow-left"></i> Back to Tasks
-            </a>
-        </div>
-    </form>
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
 
-    @section Scripts {
-        <partial name="_ValidationScriptsPartial" />
+    <div class="form-group mt-3">
+        <input type="submit" value="Create" class="btn btn-primary" />
+        <a class="btn btn-secondary"
+           asp-area="ProjectManagement"
+           asp-controller="ProjectTask"
+           asp-action="Index"
+           asp-route-projectId="@Model.ProjectId">
+            Back to List
+        </a>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-</div>
+}

@@ -1,4 +1,10 @@
-<div class="alert alert-info text-center mt-3">
-    <h5><i class="fa-solid fa-chart-pie me-2"></i> Project Summary</h5>
-    <p>Total Projects: <strong>@ViewData["ProjectCount"]</strong></p>
+@{
+    var totalProjects = ViewData["TotalProjects"];
+    var totalTasks = ViewData["TotalTasks"];
+}
+
+<div class="p-3 mb-4 bg-info bg-opacity-10 border rounded text-center">
+    <h5><i class="fa-solid fa-chart-simple"></i> Project Summary</h5>
+    <p><strong>Total Projects:</strong> @totalProjects</p>
+    <p><strong>Total Tasks:</strong> @totalTasks</p>
 </div>

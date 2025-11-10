@@ -5,34 +5,48 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Edit Task</h2>
+<h2>@ViewData["Title"]</h2>
 
 <form asp-area="ProjectManagement"
       asp-controller="ProjectTask"
       asp-action="Edit"
       method="post">
     @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.ProjectTaskId)
 
-    <!-- Keys -->
-    <input asp-for="TaskId" type="hidden" />
-    <input asp-for="ProjectId" type="hidden" />
-
-    <div class="mb-3">
-        <label asp-for="Title" class="form-label"></label>
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
         <input asp-for="Title" class="form-control" />
         <span asp-validation-for="Title" class="text-danger"></span>
     </div>
 
-    <div class="mb-3">
-        <label asp-for="Description" class="form-label"></label>
-        <input asp-for="Description" class="form-control" />
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
         <span asp-validation-for="Description" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-primary">Save</button>
-    <a class="btn btn-secondary"
-       asp-area="ProjectManagement"
-       asp-controller="ProjectTask"
-       asp-action="Index"
-       asp-route-projectId="@Model.ProjectId">Cancel</a>
+    <div class="form-group">
+        <label asp-for="ProjectId" class="control-label">Project</label>
+        <select asp-for="ProjectId"
+                asp-items="ViewBag.Projects"
+                class="form-control"></select>
+    </div>
+
+    <div class="form-group mt-3">
+        <input type="submit" value="Save" class="btn btn-primary" />
+        <a asp-area="ProjectManagement"
+           asp-controller="ProjectTask"
+           asp-action="Index"
+           asp-route-projectId="@Model.ProjectId"
+           class="btn btn-secondary">
+            Back to List
+        </a>
+    </div>
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

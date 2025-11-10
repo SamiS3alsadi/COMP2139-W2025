@@ -22,23 +22,19 @@ namespace Lap_1.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Lap_1.Models.Project", b =>
+            modelBuilder.Entity("Lap_1.Areas.ProjectManagement.Models.Project", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ProjectId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ProjectId"));
 
                     b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("character varying(200)");
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)");
 
-                    b.Property<DateTime?>("EndDate")
+                    b.Property<DateTime>("EndDate")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Name")
@@ -46,18 +42,19 @@ namespace Lap_1.Migrations
                         .HasMaxLength(60)
                         .HasColumnType("character varying(60)");
 
-                    b.Property<DateTime?>("StartDate")
+                    b.Property<DateTime>("StartDate")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Status")
-                        .HasColumnType("text");
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
 
-                    b.HasKey("Id");
+                    b.HasKey("ProjectId");
 
                     b.ToTable("Projects");
                 });
 
-            modelBuilder.Entity("Lap_1.Models.ProjectTask", b =>
+            modelBuilder.Entity("Lap_1.Areas.ProjectManagement.Models.ProjectTask", b =>
                 {
                     b.Property<int>("ProjectTaskId")
                         .ValueGeneratedOnAdd()
@@ -84,9 +81,9 @@ namespace Lap_1.Migrations
                     b.ToTable("ProjectTasks");
                 });
 
-            modelBuilder.Entity("Lap_1.Models.ProjectTask", b =>
+            modelBuilder.Entity("Lap_1.Areas.ProjectManagement.Models.ProjectTask", b =>
                 {
-                    b.HasOne("Lap_1.Models.Project", "Project")
+                    b.HasOne("Lap_1.Areas.ProjectManagement.Models.Project", "Project")
                         .WithMany("Tasks")
                         .HasForeignKey("ProjectId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -95,7 +92,7 @@ namespace Lap_1.Migrations
                     b.Navigation("Project");
                 });
 
-            modelBuilder.Entity("Lap_1.Models.Project", b =>
+            modelBuilder.Entity("Lap_1.Areas.ProjectManagement.Models.Project", b =>
                 {
                     b.Navigation("Tasks");
                 });

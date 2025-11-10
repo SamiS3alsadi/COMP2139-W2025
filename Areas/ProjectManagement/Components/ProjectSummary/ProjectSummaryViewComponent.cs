@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Lap_1.Data;
+using System.Threading.Tasks;
 
 namespace Lap_1.Areas.ProjectManagement.Components.ProjectSummary
 {
@@ -16,14 +16,13 @@ namespace Lap_1.Areas.ProjectManagement.Components.ProjectSummary
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            // Get total number of projects
-            var totalProjects = _context.Projects.Count();
+            var totalProjects = await _context.Projects.CountAsync();
+            var totalTasks = await _context.ProjectTasks.CountAsync();
 
-            // Pass data to the view
-            ViewData["ProjectCount"] = totalProjects;
+            ViewData["TotalProjects"] = totalProjects;
+            ViewData["TotalTasks"] = totalTasks;
 
-            // Render the view
-            return View("Default");
+            return View();
         }
     }
 }
