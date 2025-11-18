@@ -10,6 +10,7 @@
 <form asp-area="ProjectManagement"
       asp-controller="ProjectTask"
       asp-action="Edit"
+      asp-route-id="@Model.ProjectTaskId"
       method="post">
     @Html.AntiForgeryToken()
     @Html.HiddenFor(model => model.ProjectTaskId)

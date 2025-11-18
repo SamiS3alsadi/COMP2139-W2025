@@ -1,8 +1,19 @@
 ﻿@{
-    ViewData["Title"] = "COMP2139 Labs Home Page";
+    ViewData["Title"] = "Project Management Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-body text-center">
+            <h2 class="text-primary">Welcome to Project Management</h2>
+            <p class="lead">Manage your projects, tasks, and comments easily.</p>
+
+            <a asp-area="ProjectManagement"
+               asp-controller="Projects"
+               asp-action="Index"
+               class="btn btn-primary btn-lg">
+                View Projects
+            </a>
+        </div>
+    </div>
 </div>

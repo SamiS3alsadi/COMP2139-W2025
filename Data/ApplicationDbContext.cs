@@ -12,5 +12,7 @@ namespace Lap_1.Data
 
         public DbSet<Project> Projects { get; set; } = null!;
         public DbSet<ProjectTask> ProjectTasks { get; set; } = null!;
+        
+        public DbSet<ProjectComment> ProjectComments { get; set; }
     }
 }

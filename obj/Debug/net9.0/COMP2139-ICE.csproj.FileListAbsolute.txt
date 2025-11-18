@@ -193,4 +193,5 @@
 /Users/sami/RiderProjects/COMP2139-ICE/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 /Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.csproj.AssemblyReference.cache
 /Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/COMP2139.7F31028D.Up2Date
-/Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/compressed/2lpzs2ad9x-4zm70lyab0.gz
+/Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/compressed/gcgbshnl1y-3qwkt9y69j.gz
+/Users/sami/RiderProjects/COMP2139-ICE/obj/Debug/net9.0/compressed/2lpzs2ad9x-9l3avz9y13.gz

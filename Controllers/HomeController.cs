@@ -28,7 +28,7 @@ namespace Lap_1.Controllers
                 return RedirectToAction("Search", "ProjectTask", new { area = "ProjectManagement", query });
             }
 
-            return RedirectToAction("Search", "Projects", new { area = "ProjectManagement", query });
+            return RedirectToAction("Search", "Project", new { area = "ProjectManagement", query });
         }
 
         [Route("Home/NotFound")]

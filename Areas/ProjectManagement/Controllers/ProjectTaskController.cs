@@ -17,22 +17,22 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
             _context = context;
         }
         [HttpGet]
-        public IActionResult Index(int projectId)
+        public async Task<IActionResult> Index(int projectId)
         {
-            var tasks = _context.ProjectTasks
+            var tasks = await _context.ProjectTasks
                 .Where(t => t.ProjectId == projectId)
-                .ToList();
+                .ToListAsync();
 
             ViewBag.ProjectId = projectId;
             return View(tasks);
         }
 
         [HttpGet]
-        public IActionResult Details(int id)
+        public async Task<IActionResult> Details(int id)
         {
-            var task = _context.ProjectTasks
+            var task = await _context.ProjectTasks
                 .Include(t => t.Project)
-                .FirstOrDefault(t => t.ProjectTaskId == id);
+                .FirstOrDefaultAsync(t => t.ProjectTaskId == id);
 
             if (task == null)
             {
@@ -43,9 +43,9 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create(int projectId)
+        public async Task<IActionResult> Create(int projectId)
         {
-            var project = _context.Projects.Find(projectId);
+            var project = await _context.Projects.FindAsync(projectId);
             if (project == null)
             {
                 return NotFound();
@@ -63,38 +63,39 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Title", "Description", "ProjectId")] ProjectTask task)
+        public async Task<IActionResult> Create([Bind("Title", "Description", "ProjectId")] ProjectTask task)
         {
             if (ModelState.IsValid)
             {
-                _context.ProjectTasks.Add(task);
-                _context.SaveChanges();
+                await _context.ProjectTasks.AddAsync(task);
+                await _context.SaveChangesAsync();
+
                 return RedirectToAction(nameof(Index), new { projectId = task.ProjectId });
             }
 
-            ViewBag.Projects = new SelectList(_context.Projects, "ProjectId", "Name", task.ProjectId);
+            ViewBag.Projects = new SelectList(await _context.Projects.ToListAsync(), "ProjectId", "Name", task.ProjectId);
             return View(task);
         }
 
         [HttpGet]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            var task = _context.ProjectTasks
+            var task = await _context.ProjectTasks
                 .Include(t => t.Project)
-                .FirstOrDefault(t => t.ProjectTaskId == id);
+                .FirstOrDefaultAsync(t => t.ProjectTaskId == id);
 
             if (task == null)
             {
                 return NotFound();
             }
 
-            ViewBag.Projects = new SelectList(_context.Projects, "ProjectId", "Name", task.ProjectId);
+            ViewBag.Projects = new SelectList(await _context.Projects.ToListAsync(), "ProjectId", "Name", task.ProjectId);
             return View(task);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("ProjectTaskId", "Title", "Description", "ProjectId")] ProjectTask task)
+        public async Task<IActionResult> Edit(int id, [Bind("ProjectTaskId", "Title", "Description", "ProjectId")] ProjectTask task)
         {
             if (id != task.ProjectTaskId)
             {
@@ -103,21 +104,36 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
 
             if (ModelState.IsValid)
             {
-                _context.ProjectTasks.Update(task);
-                _context.SaveChanges();
+                try
+                {
+                    _context.ProjectTasks.Update(task);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!await TaskExistsAsync(task.ProjectTaskId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+
                 return RedirectToAction(nameof(Index), new { projectId = task.ProjectId });
             }
 
-            ViewBag.Projects = new SelectList(_context.Projects, "ProjectId", "Name", task.ProjectId);
+            ViewBag.Projects = new SelectList(await _context.Projects.ToListAsync(), "ProjectId", "Name", task.ProjectId);
             return View(task);
         }
 
         [HttpGet]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var task = _context.ProjectTasks
+            var task = await _context.ProjectTasks
                 .Include(t => t.Project)
-                .FirstOrDefault(t => t.ProjectTaskId == id);
+                .FirstOrDefaultAsync(t => t.ProjectTaskId == id);
 
             if (task == null)
             {
@@ -129,18 +145,20 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
 
         [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int projectTaskId)
+        public async Task<IActionResult> DeleteConfirmed(int projectTaskId)
         {
-            var task = _context.ProjectTasks.Find(projectTaskId);
+            var task = await _context.ProjectTasks.FindAsync(projectTaskId);
             if (task != null)
             {
                 _context.ProjectTasks.Remove(task);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
+
                 return RedirectToAction(nameof(Index), new { projectId = task.ProjectId });
             }
 
             return NotFound();
         }
+
         [HttpGet("Search")]
         public async Task<IActionResult> Search(int? projectId, string searchString)
         {
@@ -162,6 +180,7 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
                     (t.Description != null && t.Description.ToLower().Contains(searchString))
                 );
             }
+
             var tasks = await taskQuery.ToListAsync();
 
             ViewBag.ProjectId = projectId;
@@ -169,6 +188,11 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
             ViewData["SearchString"] = searchString;
 
             return View("Index", tasks);
+        }
+
+        private async Task<bool> TaskExistsAsync(int id)
+        {
+            return await _context.ProjectTasks.AnyAsync(e => e.ProjectTaskId == id);
         }
     }
 }

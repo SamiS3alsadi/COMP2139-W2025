@@ -54,6 +54,32 @@ namespace Lap_1.Migrations
                     b.ToTable("Projects");
                 });
 
+            modelBuilder.Entity("Lap_1.Areas.ProjectManagement.Models.ProjectComment", b =>
+                {
+                    b.Property<int>("CommentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("CommentId"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("ProjectId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("CommentId");
+
+                    b.HasIndex("ProjectId");
+
+                    b.ToTable("ProjectComments");
+                });
+
             modelBuilder.Entity("Lap_1.Areas.ProjectManagement.Models.ProjectTask", b =>
                 {
                     b.Property<int>("ProjectTaskId")
@@ -79,6 +105,17 @@ namespace Lap_1.Migrations
                     b.HasIndex("ProjectId");
 
                     b.ToTable("ProjectTasks");
+                });
+
+            modelBuilder.Entity("Lap_1.Areas.ProjectManagement.Models.ProjectComment", b =>
+                {
+                    b.HasOne("Lap_1.Areas.ProjectManagement.Models.Project", "Project")
+                        .WithMany()
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Project");
                 });
 
             modelBuilder.Entity("Lap_1.Areas.ProjectManagement.Models.ProjectTask", b =>
