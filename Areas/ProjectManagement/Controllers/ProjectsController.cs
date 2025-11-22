@@ -16,7 +16,6 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
             _context = context;
         }
 
-        // GET: Projects
         [HttpGet("")]
         public async Task<IActionResult> Index()
         {
@@ -27,14 +26,12 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
             return View(projects);
         }
 
-        // GET: Create
         [HttpGet("Create")]
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Create
         [HttpPost("Create")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Project project)
@@ -64,7 +61,6 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
             return input.ToUniversalTime();
         }
 
-        // GET: Details
         [HttpGet("Details/{id:int}")]
         public async Task<IActionResult> Details(int id)
         {
@@ -78,7 +74,6 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
             return View(project);
         }
 
-        // GET: Edit
         [HttpGet("Edit/{id:int}")]
         public async Task<IActionResult> Edit(int id)
         {
@@ -90,7 +85,6 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
             return View(project);
         }
 
-        // POST: Edit
         [HttpPost("Edit/{id:int}")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ProjectId,Name,Description")] Project project)
@@ -119,7 +113,6 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
             return View(project);
         }
 
-        // GET: Delete
         [HttpGet("Delete/{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -132,7 +125,6 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
             return View(project);
         }
 
-        // POST: Delete Confirmed
         [HttpPost("DeleteConfirmed/{id:int}")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -149,7 +141,6 @@ namespace Lap_1.Areas.ProjectManagement.Controllers
             return NotFound();
         }
 
-        // GET: Search
         [HttpGet("Search/{searchString?}")]
         public async Task<IActionResult> Search(string searchString)
         {

@@ -34,9 +34,6 @@
       <AdditionalFiles Include="Areas\ProjectManagement\Views\Shared\DisplayTemplates\ProjectName.cshtml" />
       <AdditionalFiles Include="Areas\ProjectManagement\Views\Shared\DisplayTemplates\ProjectTaskTitle.cshtml" />
       <AdditionalFiles Include="Views\Shared\DisplayTemplates\DateTime.cshtml" />
-      <AdditionalFiles Include="Views\Shared\DisplayTemplates\ProjectDescription.cshtml" />
-      <AdditionalFiles Include="Views\Shared\DisplayTemplates\ProjectName.cshtml" />
-      <AdditionalFiles Include="Views\Shared\DisplayTemplates\ProjectTaskTitle.cshtml" />
     </ItemGroup>
 
     <ItemGroup>

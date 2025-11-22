@@ -1,4 +1,23 @@
-<table class="table table-striped table-bordered text-center align-middle shadow-sm" style="border-color: #000; border-width: 1.5px;">
+@model IEnumerable<Lap_1.Areas.ProjectManagement.Models.Project>
+
+@{
+    ViewData["Title"] = "Projects";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Projects</h2>
+
+    <a asp-area="ProjectManagement"
+       asp-controller="Projects"
+       asp-action="Create"
+       class="btn btn-primary">
+        Create New Project
+    </a>
+</div>
+
+<table class="table table-striped table-bordered text-center align-middle shadow-sm"
+       style="border-color: #000; border-width: 1.5px;">
     <thead style="background-color: black; color: white; font-weight: bold;">
         <tr>
             <th>ID</th>
@@ -13,7 +32,6 @@
         {
             <tr>
                 <td><b>@project.ProjectId</b></td>
-
                 <td>
                     <a asp-area="ProjectManagement"
                        asp-controller="Projects"
@@ -23,9 +41,7 @@
                         @project.Name
                     </a>
                 </td>
-
                 <td style="color: red;">@project.Description</td>
-
                 <td class="text-start">
                     <a asp-area="ProjectManagement"
                        asp-controller="Projects"
@@ -35,7 +51,7 @@
                         @project.Name
                     </a>
                     <p style="color: red;">@project.Description</p>
-                    <p><b>Start Date:</b> @project.StartDate.ToString("MMMM dd, yyyy")</p> 
+                    <p><b>Start Date:</b> @project.StartDate.ToString("MMMM dd, yyyy")</p>
                     <p><b>End Date:</b> @project.EndDate.ToString("MMMM dd, yyyy")</p>
                     <p><b>Status:</b> @project.Status</p>
                     <p><b>Tasks:</b></p>
@@ -45,8 +61,7 @@
                             foreach (var task in project.Tasks)
                             {
                                 <li>
-                                    <span style="font-weight: bold; color: green;">@task.Title</span>
-                                    -
+                                    <span style="font-weight: bold; color: green;">@task.Title</span> -
                                     <span style="color: red;">@task.Description</span>
                                 </li>
                             }
@@ -57,7 +72,6 @@
                         }
                     </ul>
                 </td>
-
                 <td class="text-center">
                     <a asp-area="ProjectManagement"
                        asp-controller="Projects"
