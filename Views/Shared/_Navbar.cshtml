@@ -1,3 +1,8 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+
 <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom shadow-sm mb-3">
     <div class="container-fluid">
         <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
@@ -28,9 +33,33 @@
                     </a>
                 </li>
             </ul>
+            <ul class="navbar-nav ms-auto">
+@if (SignInManager.IsSignedIn(User))
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index">
+            Hello @UserManager.GetUserName(User)!
+        </a>
+    </li>
+    <li class="nav-item">
+        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" method="post" asp-route-returnUrl="~/">
+            <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+        </form>
+    </li>
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
+    </li>
+}
+</ul>
 
             <form class="d-flex ms-auto" asp-area="" asp-controller="Home" asp-action="Search" method="get">
-                <input class="form-control me-2" type="search" name="query" placeholder="Search..." aria-label="Search" />
+                <input class="form-control me-2" type="search" name="query" placeholder="Search..." aria-label="Search"/>
                 <select class="form-select me-2" name="type">
                     <option value="Projects">Projects</option>
                     <option value="Tasks">Tasks</option>

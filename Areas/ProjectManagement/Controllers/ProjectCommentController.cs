@@ -1,5 +1,5 @@
 using Lap_1.Areas.ProjectManagement.Models;
-using Lap_1.Data;
+using COMP2139_ICE.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

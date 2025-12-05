@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using Lap_1.Data;
+using COMP2139_ICE.Data;
 using Lap_1.Models;
 using Microsoft.AspNetCore.Mvc;
 

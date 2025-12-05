@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Lap_1.Data;
+using COMP2139_ICE.Data;
 using System.Threading.Tasks;
 
 namespace Lap_1.Areas.ProjectManagement.Components.ProjectSummary
