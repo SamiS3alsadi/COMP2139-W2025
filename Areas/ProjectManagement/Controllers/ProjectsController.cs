@@ -2,11 +2,13 @@ using Lap_1.Areas.ProjectManagement.Models;
 using COMP2139_ICE.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Lap_1.Areas.ProjectManagement.Controllers
 {
     [Area("ProjectManagement")]
     [Route("[area]/[controller]/[action]")]
+    [Authorize(Roles = "Admin,Manager")]
     public class ProjectsController : Controller
     {
         private readonly ApplicationDbContext _context;

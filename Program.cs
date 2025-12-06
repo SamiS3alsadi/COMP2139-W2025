@@ -17,8 +17,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // -----------------------------
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
     {
-        options.SignIn.RequireConfirmedAccount = true;
+        options.SignIn.RequireConfirmedAccount = false; // set to false to simplify Lab 11 testing
     })
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 // -----------------------------
@@ -72,5 +73,34 @@ app.MapControllerRoute(
 // Identity Razor Pages
 // -----------------------------
 app.MapRazorPages();
+
+// -----------------------------
+// Role and User Seeding
+// -----------------------------
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+    var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
+
+    string[] roleNames = { "Admin", "Manager", "User" };
+
+    foreach (var roleName in roleNames)
+    {
+        if (!await roleManager.RoleExistsAsync(roleName))
+        {
+            await roleManager.CreateAsync(new IdentityRole(roleName));
+        }
+    }
+
+    // 👇 MAKE THIS EMAIL ADMIN
+    var adminEmail = "filita6722@idwager.com"; 
+    var adminUser = await userManager.FindByEmailAsync(adminEmail);
+
+    if (adminUser != null && !await userManager.IsInRoleAsync(adminUser, "Admin"))
+    {
+        await userManager.AddToRoleAsync(adminUser, "Admin");
+    }
+}
 
 app.Run();

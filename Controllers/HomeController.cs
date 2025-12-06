@@ -2,6 +2,7 @@ using System.Diagnostics;
 using COMP2139_ICE.Data;
 using Lap_1.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Lap_1.Controllers
 {
@@ -21,6 +22,7 @@ namespace Lap_1.Controllers
             return View();
         }
 
+        [Authorize(Roles = "Admin,Manager")]
         public IActionResult About()
         {
             return View();
